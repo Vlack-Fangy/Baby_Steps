@@ -1,0 +1,28 @@
+1> Has to consist of Right Fields
+2>Actual LastHash references
+3> Hash needs to be valid
+
+How to check three-
+timeStamp:
+Data:
+LastHash:
+Hash:
+
+First we will take{timeStamp,Data,LastHash} and regernerate the Hash
+Then we compare this new and real Hash with the this.Hash
+if(Hash!=this.Hash){
+    We know that the feild values{timeStamp,Data,LastHash} have been tampered with(in the attackers favour, to say a case)
+}
+
+
+Chain Replacement->
+Lets take Example of one node. It will keep track of its transactions, build blocks, and add them to Block Chain
+This is all good, but the power of BlockChain shines when we are having it used by many nodes. 
+So, now lets consider the case of work during the day, rest during the night.
+So, during the day, all nodes will buildup Blocks and tally transactions as they are supposed to and Add it to their instance of BlockCjhain. 
+At the end of the day, all Nodes will have variety of Chains. 
+Now, that they have finished the work, its time to again merge these blockChains into one assimilated BlockChain, which has been agreed by all others. 
+This longer and valid Block Chain replaces the instance of BlockChain on each Node, and then the Process is over. 
+The next day, Nodes will work on this BlockChain , with each node starting from the same terminal, and this process continues...
+
+//day and night is used to have a clear idea, and ... fictional
