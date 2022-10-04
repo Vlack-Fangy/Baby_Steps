@@ -3,7 +3,7 @@ const { response } = require("express");
 const express = require("express");
 const request = require("request");
 const BlockChain = require("./BlockChain");
-const PubSub = require("./pubsub");
+const PubSub = require("./app/pubsub");
 
 const app = express();
 const BlockChainie = new BlockChain();
